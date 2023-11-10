@@ -1,0 +1,13 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+    background-color: burlywood;
+    text-align: center;
+}
+
+p{
+    line-height: 50px;
+    column-count: 3;
+    column-gap: 30px;
+
+}
