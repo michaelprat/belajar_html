@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./semantic_element.html">Home</a>
+            <a href="./about.html">Halaman About</a>
+            <a href="./latihanTable.html">Halaman Table</a>
+            <a href="./latihanForm.html">Halaman Form</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Latihan Ulang Form -->
+        <!-- element for di label digunakan untuk menambah feature aksebilitas dan sebagai semantic dari formnya(memperjelas struktur) -->
+        <!-- Cara penggunaanya biasanya menggunakan element id dan isinya disamakan dengan value di element for ,contohnya bisa dilihat dibawah: -->
+        <form action="registrasi" method="get">
+            <!-- element name ->  element pembungkus data untuk dikirim  -->
+            <!-- 2 method umum yang digunakan di form :   -->
+            <!--  1.POST(data dari name dikirim ke action dan melakukan refresh dan tidak ditampilkan di url) -->
+               <!-- Data yg dikirim menggunakan method post  bisa dicheck menggunakan developer tools browser , dibagian panel-->
+            <!--  2.GET(data dari name dikirim ke method di action dan nama element name dan isinya  ditampilkan di URL -->
+               <!--  ** isi dari element name yang berupa symbol akan diubah menjadi tipe data encoding berupa %,+,nomor dll -->
+            <div>
+                <label for="Nama">Nama:</label>
+                <input type="text" placeholder="Masukan Nama" id="Nama" name="nama_user">
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="Masukan email" id="Email" name="email_user">
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" placeholder="Masukan Password" id="Password" name="password_user">
+            </div>
+            <div>
+                <label for="PhoneNumber">Masukan No HandPhone:</label>
+                <input type="number" placeholder="Masukan No HP" id="PhoneNumber" name="no_hp">
+            </div>
+            <div>
+                <!-- Input type color picker -->
+                <label for="warna">Pilih Warna Text Avatar</label>
+                <input type="color" id="warna" name="warna_avatar">
+            </div>
+            <!-- Latihan Ulang Radio Button  -->
+            <div>
+               <Label>Jenis Kelamin</Label>
+               <input type="radio" name="gender" id="gender_male" value="male"><Label for="gender_male"> Laki-laki</Label>
+               <input type="radio" name="gender" id="gender_female" value="female"><Label for="gender_female">Perempuan</Label>
+            </div>
+            <!-- Latihan Ulang Select Option -->
+            <div>
+                <Label for="hobbies">Hobi Anda:</Label>
+                <select name="hobby" id="hobbies">
+                    <option value="--select--" selected>--Pilih Hobi Anda---</option>
+                    <option value="Gaming">Main Game</option>
+                    <option value="Reading">Membaca Buku</option>
+                    <option value="Sports">Berolahraga</option>
+                    <option value="Shopping">Belanja</option>
+                </select>
+            </div>
+            <!-- Latihan Ulang TextArea -->
+            <div>
+                <label for="Comment">Komentar</label>
+                <textarea name="Comments" id="Comment" cols="20" rows="4">
+                </textarea>
+            </div>
+             <!-- Latihan Ulang CheckBox -->
+             <div>
+                <label >Apakah Menyetujui Persyaratan?</label>
+                <input type="checkbox" name="agree" id="Agreement">Setuju
+             </div>
+            <div>
+                <!-- Button di form -->
+                <!-- Ketika button diclick akan menjalankan method di dalam form -->
+                <!-- Default type dari button adalah type="submit" -->
+                <button>Kirim</button>
+                <!-- Jika tidak ingin menjalakan method di dalam form bisa ditambahkan element type="button" -->
+                <button type="button">Button Pajangan</button>
+                <!-- Bisa juga digunakan untuk reset value input form lain dengan menggunakan element type="reset" -->
+                <button type="reset">Button Reset</button>
+                <!-- Bisa juga dengan menggunakan input type="submit" -->
+                <!-- <input type="submit">Button Submit</input> -->
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

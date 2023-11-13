@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Table HTML</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./semantic_element.html">Home</a>
+            <a href="./about.html">Halaman About</a>
+            <a href="./latihanTable.html">Halaman Table</a>
+            <a href="./latihanForm.html">Halaman Form</a>
+        </nav>
+    </header>
+    <!-- Trivia Table HTML : Dulu digunakan sebagain layout website -->
+    <!-- Semantic tag dalam table -->
+    <!-- Fungsinya sama dengan semantic tag (untuk memperjelas struktur table) -->
+    <!-- Contoh tagnya: <thead></thead> <tbody></tbody> <tfoot></tfoot> -->
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posisi</th>
+                    <th>Negara</th>
+                    <th>IbuKota</th>
+                    <th>Populasi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tiongkok</td>
+                    <td>Beijing</td>
+                    <td>20.693.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jepang</td>
+                    <td>Tokyo</td>
+                    <td>13.950.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rusia</td>
+                    <td>Moskow</td>
+                    <td>11.000.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Posisi</th>
+                    <th>Negara</th>
+                    <th>IbuKota</th>
+                    <th>Populasi</th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Total Populasi:
+                    </td>
+                    <td>
+                        45.643.000
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+        <hr>
+        <!-- Latihan RowSpan dan Colspan-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <td rowspan="2">Tahun</td>
+                    <td colspan="3">Moris(2010)<sup>[1]</sup></td>
+                    <td colspan="3">ModelSki(2003)<sup>[2]</sup></td>
+                    <td colspan="3">Chandler(1987)<sup>[3]</sup></td>
+                </tr>
+                <tr>
+                    <td>Populasi</td>
+                    <td>Nama</td>
+                    <td>Lokasi Sekarang</td>
+                    <td>Populasi</td>
+                    <td>Nama</td>
+                    <td>Lokasi Sekarang</td>
+                    <td>Populasi</td>
+                    <td>Nama</td>
+                    <td>Lokasi Sekarang</td>
+                </tr>
+
+
+
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">7000 SM</td>
+                    <td rowspan="4"><sup>[4]</sup>1.000</td>
+                </tr>
+                <tr>
+                    <td>Beidha</td>
+                    <td>Yordania</td>
+                    <td rowspan="3">1000-2000</td>
+                    <td rowspan="3">Yerikho</td>
+                    <td rowspan="3">Tepi Barat</td>
+                    <td rowspan="3">1000-2000</td>
+                    <td rowspan="3">Yerikho</td>
+                    <td rowspan="3">Tepi Barat</td>
+
+
+
+                </tr>
+                <tr>
+                    <td>Bastha <sup>[6]</sup></td>
+                    <td>Yordania </td>
+                </tr>
+                <tr>
+                    <td>Catalhoyuk</td>
+                    <td>Turki</td>
+                </tr>
+                <tr>
+                    <td>6500SM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+
+
+
+            </tbody>
+        </table>
+
+    </main>
+</body>
+
+</html>
