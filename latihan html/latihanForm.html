@@ -88,7 +88,21 @@
                 <!-- Bisa juga dengan menggunakan input type="submit" -->
                 <!-- <input type="submit">Button Submit</input> -->
             </div>
+        </form>
 
+        <hr>
+        <h2>Form dengan Validasi </h2>
+        <!-- Contoh Validasi HTML Standar(Client Side Validation) -->
+        <!-- di input Text bisa memberikan validasi berupa required,minLength(minimal huruf),maxLength(maximum Huruf) -->
+        <!-- Bisa untuk validasi email,tanggal dkk -->
+        <!-- Untuk Selengkapnya bisa dilihat di: -->
+        <!-- **trivia bahasa errornya akan berdasarkan IP address , contoh misal dari jepang maka bahasa errornya akan otomatis menggunakan bahasa jepang  -->
+         <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation -->
+        <form action="valid" method="get">
+            <div>
+                <input type="text" name="searh" id="searchValue" required minlength="3" maxlength="10">
+            </div>
+            <button>Submit</button>
         </form>
     </main>
 </body>
